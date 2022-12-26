@@ -10,9 +10,10 @@ if ($num_rows) {
  $fname=$_POST['fname'];
  $lname=$_POST['lname'];
  $address=$_POST['address'];
+ $address=$_POST['dob'];
  $username=$_POST['username'];
  $password=$_POST['password'];
- if(mysqli_query($con,"INSERT INTO member(fname, lname, address,username, password)VALUES('$fname', '$lname','$address', '$username', '$password')")){ 
+ if(mysqli_query($con,"INSERT INTO member(fname, lname, address, dob, username, password)VALUES('$fname', '$lname','$address', '$dob', '$username', '$password')")){ 
  header("location: index.php?remarks=success");
  }else{
   $e=mysqli_error($con);
