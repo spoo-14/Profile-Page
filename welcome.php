@@ -50,6 +50,10 @@ while($rows=mysqli_fetch_array($result)){
 <td class="tl-1"><div align="left" id="tb-name">Email id:</div></td>
 <td class="tl-4"><?php echo $rows['address']; ?></td>
 </tr>
+<tr id="lg-1">
+<td class="tl-1"><div align="left" id="tb-name">DOB:</div></td>
+<td class="tl-4"><?php echo $rows['dob']; ?></td>
+</tr>
 </table>
 <div id="reg-bottom" class="btmrg">Copyright &copy; 2022 Fresherprofiles.com</div>
 </form>
